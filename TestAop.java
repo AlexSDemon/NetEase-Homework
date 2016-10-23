@@ -11,6 +11,7 @@ public class TestAop {
 		Caculator caculator = context.getBean("caculator", Caculator.class);
 		System.out.println(caculator.add(1, 1));
 		System.out.println(caculator.sub(5, 2));
+		System.out.println(caculator.add(2, 2));
 		System.out.println(caculator.getClass());
 
 		((ConfigurableApplicationContext) context).close();
